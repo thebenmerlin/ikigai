@@ -318,69 +318,51 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container">
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h2>Get In Touch</h2>
-                        <p>Ready to begin your healing journey? Contact us to schedule your personalized consultation.</p>
-                        
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <strong>Phone:</strong>
-                                <a href="tel:+919405062369" aria-label="Call us at +91 9405062369">+91 9405062369</a>
-                            </div>
-                            <div class="contact-item">
-                                <strong>Email:</strong>
-                                <a href="mailto:ikigaiintegrativehealthcare@gmail.com" aria-label="Email us">ikigaiintegrativehealthcare@gmail.com</a>
-                            </div>
-                        </div>
+       <section id="contact" class="section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="contact-form-wrapper">
+      <form id="contactForm"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSfUr7s9smwhpwjY6s5Jqls3T8TZGq0iKU4OAegygMpLM4CSUg/formResponse"
+        method="POST"
+        target="hidden_iframe"
+        onsubmit="showSuccessMessage()">
 
-                        <img src="images/contact-location.jpg" alt="Ikigai Integrative Healthcare consultation space" />
-                    </div>
+        <div class="form-group">
+          <label for="name" class="form-label">Full Name *</label>
+          <input type="text" id="name" name="entry.1277211509" class="form-control" required>
+        </div>
 
-                    <div class="contact-form-wrapper">
-                        <form id="contactForm" class="contact-form"
-      action="https://docs.google.com/forms/d/e/1FAIpQLSfUr7s9smwhpwjY6s5Jqls3T8TZGq0iKU4OAegygMpLM4CSUg/formResponse"
-      method="POST" target="hidden_iframe" onsubmit="showSuccessMessage()">
-    <h3>Send us a message</h3>
-    
-    <div class="form-group">
-        <label for="name" class="form-label">Full Name *</label>
-        <input type="text" id="name" name="entry.1277211509" class="form-control" required>
+        <div class="form-group">
+          <label for="email" class="form-label">Email Address *</label>
+          <input type="email" id="email" name="entry.964461692" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" id="phone" name="entry.168385681" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">Message *</label>
+          <textarea id="message" name="entry.1633366599" class="form-control" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+      </form>
+
+      <!-- Hidden iframe for background submission -->
+      <iframe name="hidden_iframe"></iframe>
+
+      <!-- Success message -->
+      <div id="successMessage" class="success-message hidden">
+        <div class="success-icon">✓</div>
+        <h3>Thank you!</h3>
+        <p>Your message has been sent successfully. We'll get back to you soon.</p>
+      </div>
     </div>
-
-    <div class="form-group">
-        <label for="email" class="form-label">Email Address *</label>
-        <input type="email" id="email" name="entry.964461692" class="form-control" required>
-    </div>
-
-    <div class="form-group">
-        <label for="phone" class="form-label">Phone Number</label>
-        <input type="tel" id="phone" name="entry.168385681" class="form-control">
-    </div>
-
-    <div class="form-group">
-        <label for="message" class="form-label">Message *</label>
-        <textarea id="message" name="entry.1633366599" class="form-control" rows="5" required></textarea>
-    </div>
-
-    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
-</form>
-
-<!-- Hidden iframe for Google Form submission -->
-<iframe name="hidden_iframe" style="display:none;"></iframe>
-
-<div id="successMessage" class="success-message hidden">
-    <div class="success-icon">✓</div>
-    <h3>Thank you!</h3>
-    <p>Your message has been sent successfully. We'll get back to you soon.</p>
-</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  </div>
+</section>
     </main>
 
     <!-- Footer -->
