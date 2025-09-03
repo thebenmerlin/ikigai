@@ -408,16 +408,12 @@ function isValidPhone(phone) {
 
 // Simulate form submission (replace with actual endpoint)
 function submitForm(formData) {
-    return new Promise((resolve, reject) => {
-        // Simulate network delay
-        setTimeout(() => {
-            // For demonstration - replace with actual form submission
-            console.log('Form data submitted:', Object.fromEntries(formData.entries()));
-            resolve();
-        }, 1500);
+    return fetch("https://docs.google.com/forms/d/e/1FAIpQLSfUr7s9smwhpwjY6s5Jqls3T8TZGq0iKU4OAegygMpLM4CSUg/formResponse", {
+        method: "POST",
+        mode: "no-cors",
+        body: formData
     });
 }
-
 // Show success message
 function showSuccessMessage() {
     const contactForm = document.getElementById('contactForm');
