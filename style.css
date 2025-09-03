@@ -1873,3 +1873,22 @@ iframe[name="hidden_iframe"] {
   display: none !important;
   visibility: hidden;
 }
+.success-message {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #f0fdf4; /* soft green background */
+  border: 1px solid #d1fae5; /* matching border */
+  border-radius: 8px;
+  margin-top: 1rem;
+  display: none; /* hidden by default */
+}
+
+.success-message .success-icon {
+  font-size: 2rem;
+  color: #16a34a; /* green checkmark */
+  margin-bottom: 0.5rem;
+}
+
+.success-message.hidden {
+  display: none;
+}
