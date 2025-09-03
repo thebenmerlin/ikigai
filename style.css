@@ -1868,3 +1868,8 @@ textarea.form-control {
     scroll-behavior: auto;
   }
 }
+/* Hide Google Form iframe used for background submissions */
+iframe[name="hidden_iframe"] {
+  display: none !important;
+  visibility: hidden;
+}
