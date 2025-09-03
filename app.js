@@ -810,3 +810,8 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
+
+function showSuccessMessage() {
+  document.getElementById("contactForm").style.display = "none";
+  document.getElementById("successMessage").classList.remove("hidden");
+}
